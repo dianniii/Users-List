@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { User } from "../types/user";
 
-const API_URL = process.env.API_URL;
 //все пользователи
 export async function getUsers (): Promise<User[]>  {
-    const response = await fetch(`${API_URL}/users`, {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users", {
         cache: 'force-cache',
     });
     if (!response.ok) {
@@ -16,7 +15,7 @@ export async function getUsers (): Promise<User[]>  {
 
 //один пользователь
 export async function getUser (id: string): Promise<User | null> {
-    const response = await fetch(`${API_URL}/users/${id}`, {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
     });
 
     if (!response.ok) {
