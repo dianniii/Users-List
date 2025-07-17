@@ -51,7 +51,7 @@ export default function UserList({ users }: UserListProps) {
                   className="font-medium">Компания: {user.company.name}
                 </p>
                 <p 
-                  className="mt-10 text-black w-min rounded-sm group-hover:bg-emerald-100 border-1 border-emerald-400 py-1 px-5">
+                  className="mt-10 text-black w-min rounded-sm group-hover:bg-emerald-100 border-1 border-emerald-400 py-1 px-5 group-hover:font-medium">
                     Подробнее
                 </p>
               </CardContent>
