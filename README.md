@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Users List
 
-## Getting Started
+Приложение на **Next.js** для просмотра списка пользователей и их детальной информации по карточкам Данные, отображаемые на сайте приходят с публичного API [JSONPlaceholder](https://jsonplaceholder.typicode.com). 
 
-First, run the development server:
+Интерфейс построен на React, TypeScript, Tailwind-CSS и shadcn/ui.
+
+Ознакомиться с сайтом можно по ссылке ниже:
+<https://users-4cd620hmu-dianniiis-projects.vercel.app/>
+
+## Функционал приложения
+ **Главная** `/` -  Серверный рендерингд<br>Возможность поиск по имени пользователя<br>Карточки включают в себя краткую информацию о пользователе, ознакомиться также можно по кнопке **Подробнее**
+
+**Подробная страница** `/user/[id]` Серверный рендеринг одной карточки по id пользователя<br>Также можно вернуться назад к общему списку по кнопке **Вернуться к списку**
+
+**404** `not-found.tsx` Страница не найдена
+
+**Loading‑состояния**  Sceleton загрузки до того, как данные появятся на странице
+
+
+## Стек
+ **Next.js** SSR / ISR, Server Components, файловая марщрутизация
+ **TypeScript** типизация данных, пришедших с сервера
+ **Tailwind CSS** стилизация компонентов
+ **Shadcn** готовые компоненты
+
+## Необходимо:
+
+- **Node.js** - 18 и выше
+- **npm**
+
+## Чтобы запустить проект: 
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install - # Установка зависимостей
+
+npm run dev - # Запуск режима разработки
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
