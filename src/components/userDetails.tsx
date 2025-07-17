@@ -11,7 +11,7 @@ export default function UserDetails ({ user }: UserDetailsProps) {
     return (
     <main className="mx-auto max-w-screen-xl space-y-4">
         <div className="flex justify-start">
-            <Button className="px-4 py-2">
+            <Button asChild variant="outline" className="px-4 py-2">
                 <Link href="/">Вернуться к списку</Link>
             </Button>
         </div>

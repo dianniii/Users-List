@@ -21,7 +21,7 @@
  **Next.js** SSR / ISR, Server Components, файловая марщрутизация
  <br>**TypeScript** типизация данных, пришедших с сервера
   <br>**Tailwind CSS** стилизация компонентов
-  <br>**Shadcn** готовые компоненты
+  <br>**Shadcn** готовые компоненты (Card, Button, Skeleton, Input)
 
 ## Необходимо:
 

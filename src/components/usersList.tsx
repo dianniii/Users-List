@@ -3,7 +3,7 @@
 import { useState, useMemo, useRef, ChangeEvent } from "react";
 import { User } from "@/types/user";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { InputPoisk } from "@/components/ui/InputPoisk";
+import { Input} from "@/components/ui/Input";
 import Link from "next/link";
 
 interface UserListProps {
@@ -25,7 +25,7 @@ export default function UserList({ users }: UserListProps) {
 
   return (
     <>
-      <InputPoisk
+      <Input
         ref={inputRef}
         placeholder="Введите имя пользователя"
         value={search}
