@@ -87,7 +87,7 @@ const CardFooter = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>
     <div
       data-slot="card-footer"
       ref={ref}
-      className={cn("flex items-center px-4 pt-4", className)}
+      className={cn("flex items-center pt-4", className)}
       {...props}
     />
   )

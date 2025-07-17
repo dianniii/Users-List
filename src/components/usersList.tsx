@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useRef, ChangeEvent } from "react";
 import { User } from "@/types/user";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { InputPoisk } from "@/components/ui/InputPoisk";
 import Link from "next/link";
 
@@ -50,10 +50,12 @@ export default function UserList({ users }: UserListProps) {
                 <p 
                   className="font-medium">Компания: {user.company.name}
                 </p>
-                <p 
-                  className="mt-10 text-black w-min rounded-sm group-hover:bg-emerald-100 border-1 border-emerald-400 py-1 px-5 group-hover:font-medium">
-                    Подробнее
-                </p>
+                <CardFooter>
+                  <p 
+                    className="mt-10 text-black w-min rounded-sm group-hover:bg-emerald-100 border-1 border-emerald-400 py-1 px-5 group-hover:font-medium">
+                      Подробнее
+                  </p>
+                </CardFooter>
               </CardContent>
             </Card>
           </Link>
